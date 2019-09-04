@@ -1,0 +1,59 @@
+.projeto{
+	display: block;
+	height: auto;
+	width: auto;
+	padding: 6rem;
+	margin-left: 25%;
+	margin-right: 25%;
+	text-align: center;
+}
+
+.info-container{
+	display: flex;
+	height: 3rem;
+	margin: 0 auto;
+	margin-bottom: 4.7rem;
+	max-width: 40rem;
+	justify-content: space-evenly;
+	background-color: #5DC8EB;
+	box-shadow: 0px 0px 3px;
+}
+
+.info-item {
+	align-self: center;
+	padding: 0.5rem;
+}
+
+.proj-container{
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 9.3rem;
+	max-width: 55rem;
+}
+
+.proj-item {
+	background-color: #B0EAFF;
+}
+
+.proj-txt{
+	margin: 1rem;
+	padding: 2rem;
+	text-align: justify;
+}
+
+.title{
+	font-family: 'PT Serif', serif;
+	font-size: 2.1rem;
+}
+
+.proj_sans{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 1rem;
+	margin-top: 1rem; 
+}
+
+.info_sans{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+}
