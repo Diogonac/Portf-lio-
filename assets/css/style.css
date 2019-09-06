@@ -67,3 +67,66 @@
   color: #000000;
   text-decoration: none;
 }
+
+@media (max-width: 38rem) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px;
+    background-color: #5DC8EB;
+    height: 3rem;
+    width: auto;
+    align-items: center;
+  }
+
+  .header-inside-container {
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .header-items {
+    align-self: center;
+    padding: 0.5rem;
+  }
+
+  .header-pesquisa {
+    align-self: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px -1px 5px;
+    background-color: #5DC8EB;
+    height: 3rem;
+    width: auto;
+    align-items: center;
+  }
+
+  .footer-inside-container {
+    justify-content: center;
+    margin: 0.5rem;
+  }
+
+  .footer-items {
+    align-self: center;
+    padding: 0.5rem;
+  }
+
+  .footer-linkedin {
+    align-self: center;
+  }
+
+  .font_main{
+    font-family: 'PT Serif', serif;
+    font-size: 1.1rem;
+  }
+
+  .font_sub{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    margin-top: 1.2rem; 
+  }
+
+}

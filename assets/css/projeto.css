@@ -57,3 +57,45 @@
 	font-size: 0.9rem;
 	line-height: 1.4rem;
 }
+
+@media (max-width: 38rem) {
+	.projeto{
+		display: block;
+		height: auto;
+		width: auto;
+		padding: 6rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+		text-align: center;
+	}
+
+	.info-container{
+		display: flex;
+		height: 3rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 4.7rem;
+		max-width: 40rem;
+		justify-content: space-evenly;
+		background-color: #5DC8EB;
+		box-shadow: 0px 0px 3px;
+	}
+
+	.proj-container{
+		display: flex;
+		flex-direction: column;
+		margin: 1rem;
+		margin-bottom: 9.3rem;
+		max-width: 30rem;
+	}
+
+	.proj-item {
+		background-color: #B0EAFF;
+	}
+
+	.proj-txt{
+		margin: 0rem;
+		padding: 1rem;
+		text-align: justify;
+	}
+}

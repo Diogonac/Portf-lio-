@@ -47,3 +47,40 @@
 	line-height: 1.5rem;
 	margin-top: 1.2rem; 
 }
+
+@media (max-width: 38rem) {
+
+	.categoria{
+		display: block;
+		height: auto;
+		width: auto;
+		padding: 0rem;
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		min-width: 0rem;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.proj-container1{
+		display: flex;
+		flex-direction: column;
+		margin: 0rem;
+		margin-bottom: 1rem;
+		max-width: 90rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.proj-container2{
+		display: flex;
+		flex-direction: column;
+		margin: 0rem;
+		margin-bottom: 6.7rem;
+		max-width: 90rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+}

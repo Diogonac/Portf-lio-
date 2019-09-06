@@ -9,12 +9,17 @@
 	text-align: center;
 }
 
+.foto_aluno{
+	width: 320px;
+	height: 320px;
+}
+
 .cat-container{
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 4.7rem;
 	max-width: 90rem;
-	min-width: 60rem;
+	min-width: 100%;
 }
 
 .cat-item {
@@ -40,4 +45,58 @@
 	font-size: 1rem;
 	line-height: 1.5rem;
 	margin-top: 1.2rem; 
+}
+
+@media (max-width: 38rem) {
+	.aluno{
+		display: flex;
+		height: auto;
+		min-width: 0rem;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+		padding: 0rem;
+		text-align: center;
+	}
+
+	.text1{
+	  color: #000000;
+	  text-decoration: none;
+	  max-width: 14rem;
+	  padding: 0.5rem;
+	}
+
+	.foto_aluno{
+		width: 160px;
+		height: 160px;
+	}
+
+	.cat-container{
+		display: flex;
+		flex-direction: column;
+		margin: 0rem;
+		margin-bottom: 4.7rem;
+		max-width: 90rem;
+		min-width: 0rem;
+	}
+
+	.cat-item {
+		background-color: #B0EAFF;
+		align-content: space-around;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.font_serif{
+		font-family: 'PT Serif', serif;
+		font-size: 1.5rem;
+	}
+
+	.font_sans{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-size: 0.7rem;
+		line-height: 0.75rem;
+		margin-top: 1.2rem; 
+	}
 }
