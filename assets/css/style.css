@@ -16,6 +16,8 @@
 .header-items {
   align-self: center;
   padding: 0.5rem;
+  color: #000000;
+  text-decoration: none;
 }
 
 .header-pesquisa {

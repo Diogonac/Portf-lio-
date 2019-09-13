@@ -21,7 +21,7 @@
 
 .info-item {
 	align-self: center;
-	padding: 0.5rem;
+	padding: 0.72rem;
 }
 
 .proj-container{
@@ -56,6 +56,12 @@
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 0.9rem;
 	line-height: 1.4rem;
+}
+
+.info-item:hover{
+	font-weight: bold;
+	background-color: #b0eaff;
+	transition: background-color 1s;
 }
 
 @media (max-width: 38rem) {
