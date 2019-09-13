@@ -51,6 +51,8 @@
 .font_main{
   font-family: 'PT Serif', serif;
   font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
 }
 
 .font_sub{
