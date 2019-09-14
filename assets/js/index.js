@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   let db = coDesConnect('https://portif-27880.firebaseio.com/')
 
-  db.download('/portfolio', function(data) {
+  db.download('/', function(data) {
+    context = data
+    coDesReplace('.cat-container', context)
 
     /*
       Sim, abaixo estamos usando "in" em vez de "of", pois

@@ -33,7 +33,7 @@
 
   <main>
     <div class="aluno">
-      <img class="foto_aluno" src="https://picsum.photos/320/320" alt="foto do aluno">
+      <img class="foto_aluno" src="assets/img/aluno.jpg" alt="foto do aluno">
       <div class="text1">
         <p class="font_serif">
           Gabriel Jesus
@@ -46,8 +46,28 @@
         </p>
       </div>
     </div>
+
+    <ul class="cat-container">
+      {{#each portfolio}}
+        <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
+        <li class="cat-item">
+          <div class="text">
+            <p class="cat-txt">
+              <a class="font_main" href="categoria.html">{{this.categoria}}</a>
+            </p>
+            <div class="font_sub">
+              <p class="cat-txt">
+                {{this.descricao}}
+              </p>
+            </div>
+          </div>
+        </li>
+        <div class="margem">
+          <!-- by Diogo Cintra 2A -->
+        </div>
+      {{/each}}
     
-    <div class="cat-container">
+    <!-- <div class="cat-container">
       <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
       <div class="cat-item">
         <div class="text">
@@ -65,9 +85,9 @@
         </div>
       </div>
 
-      <div class="margem">
+      <div class="margem"> -->
        <!--  by Diogo Cintra 2A -->
-     </div>
+     <!-- </div>
      
      <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
      <div class="cat-item">
@@ -84,7 +104,8 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
+    </ul>
   </div>
 </main>
 <footer class="footer-container">
