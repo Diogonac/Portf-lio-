@@ -28,7 +28,7 @@
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 9.3rem;
-	max-width: 55rem;
+	max-width: auto;
 }
 
 .proj-item {
@@ -37,7 +37,7 @@
 
 .proj-txt{
 	margin: 1rem;
-	padding: 2rem;
+	padding: 1rem;
 	text-align: justify;
 }
 
@@ -95,9 +95,13 @@
 		max-width: 30rem;
 	}
 
-	.proj-item {
+.proj-item {
 		background-color: #B0EAFF;
-	}
+		height: auto;
+		width: 20rem;
+		max-width: 20rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
 
 	.proj-txt{
 		margin: 0rem;
