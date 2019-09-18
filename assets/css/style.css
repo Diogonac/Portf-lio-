@@ -1,3 +1,7 @@
+body{
+  background-color: #f1eae5
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;

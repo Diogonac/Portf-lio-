@@ -39,21 +39,18 @@
           Gabriel Jesus
         </p>
         <p class="font_sans">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Bem vindo, usuário(a)! Essa página dá acesso ao portfólio completo de Gabriel Jesus. Todos os projetos realizados na sua vida estão divididos em duas categorias principais, que pode sem encontradas abaixo. Clique no nome da categoria para obter mais informações.
         </p>
       </div>
     </div>
 
     <ul class="cat-container">
       {{#each portfolio}}
-        <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
+        <img class="cat-item" src="assets/img/{{@key}}.jpg" alt="foto da categoria">
         <li class="cat-item">
           <div class="text">
             <p class="cat-txt">
-              <a class="font_main" href="categoria.html">{{this.categoria}}</a>
+              <a class="font_main" href="categoria.html?key={{@key}}">{{this.categoria}}</a>
             </p>
             <div class="font_sub">
               <p class="cat-txt">
@@ -66,45 +63,6 @@
           <!-- by Diogo Cintra 2A -->
         </div>
       {{/each}}
-    
-    <!-- <div class="cat-container">
-      <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
-      <div class="cat-item">
-        <div class="text">
-          <p class="cat-txt">
-            <a class="font_main" href="categoria.html">Feitos em laboratório</a>
-          </p>
-          <div class="font_sub">
-            <p class="cat-txt">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. 
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="margem"> -->
-       <!--  by Diogo Cintra 2A -->
-     <!-- </div>
-     
-     <img class="cat-item" src="https://picsum.photos/200/250" alt="foto da categoria">
-     <div class="cat-item">
-      <div class="text">
-        <p class="cat-txt">
-          <a class="font_main" href="categoria.html">Feitos sem o uso de labóratorio</a>          
-        </p>
-        <div class="font_sub">
-          <p class="cat-txt">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. 
-          </p>
-        </div>
-      </div>
-    </div> -->
     </ul>
   </div>
 </main>

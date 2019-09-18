@@ -22,28 +22,32 @@
 .info-item {
 	align-self: center;
 	padding: 0.72rem;
+	font-size: 1.1rem;
 }
 
 .proj-container{
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 9.3rem;
-	max-width: auto;
+	max-width: 55rem;
 }
 
 .proj-item {
 	background-color: #B0EAFF;
+	min-width: 50%;
+	height: 31rem;
 }
 
 .proj-txt{
-	margin: 1rem;
+	font-size: 1.1rem;
+	margin-top: 11.5rem;
 	padding: 1rem;
-	text-align: justify;
+	text-align: center;
 }
 
 .title{
 	font-family: 'PT Serif', serif;
-	font-size: 2.1rem;
+	font-size: 2.5rem;
 }
 
 .proj_sans{
@@ -59,7 +63,7 @@
 }
 
 .info-item:hover{
-	font-weight: bold;
+	font-weight: 900;
 	background-color: #b0eaff;
 	transition: background-color 1s;
 }
@@ -95,13 +99,10 @@
 		max-width: 30rem;
 	}
 
-.proj-item {
-		background-color: #B0EAFF;
-		height: auto;
-		width: 20rem;
-		max-width: 20rem;
-		margin-left: 0rem;
-		margin-right: 0rem;
+	.proj-item {
+			background-color: #B0EAFF;
+
+	}
 
 	.proj-txt{
 		margin: 0rem;

@@ -1,38 +1,57 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+	let params = coDesExtract()
+  	let cat = params['cat']
+	let proj = params['proj']
+
+	let db = coDesConnect('https://portif-27880.firebaseio.com/')
+
 	let descricao = document.querySelector('a1')
 	let materiais = document.querySelector('a2')
 	let grupo = document.querySelector('a3')
 	let titulo = document.querySelector('a4')
 
-	descricao.addEventListener('click', function(){
+	db.download('/', function(data) {
 
-		let informacao = document.querySelector('p')
-		informacao.innerHTML = 'informacao1'
+		context = data['portfolio'][cat]['projetos'][proj]
+	    coDesReplace('.title', context)
 
-	})		
+	    context = data['portfolio'][cat]['projetos'][proj]
+	    coDesReplace('.proj-txt', context)
 
-	materiais.addEventListener('click', function(){
+		descricao.addEventListener('click', function(){
 
-		let informacao = document.querySelector('p')
-		informacao.innerHTML = 'informacao2'
+			let informacao = document.querySelector('p')
+			context = data['portfolio'][cat]['projetos'][proj]['descricao']
+			informacao.innerHTML = context
 
-	})	
+		})		
 
-	grupo.addEventListener('click', function(){
+		materiais.addEventListener('click', function(){
 
-		let informacao = document.querySelector('p')
-		informacao.innerHTML = 'informacao3'
+			let informacao = document.querySelector('p')
+			context = data['portfolio'][cat]['projetos'][proj]['materiais']
+			informacao.innerHTML = context
 
-	})	
+		})	
 
-	titulo.addEventListener('click', function(){
+		grupo.addEventListener('click', function(){
 
-		let informacao = document.querySelector('p')
-		informacao.innerHTML = 'informacao4'
+			let informacao = document.querySelector('p')
+			context = data['portfolio'][cat]['projetos'][proj]['grupo']
+			informacao.innerHTML = context
 
-	})	
+		})	
 
+		titulo.addEventListener('click', function(){
+
+			let informacao = document.querySelector('p')
+			context = data['portfolio'][cat]['projetos'][proj]['titulo']
+			informacao.innerHTML = context
+
+		})
+
+	})
 
 })
 

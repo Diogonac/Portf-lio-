@@ -7,6 +7,8 @@
   <link href="assets/css/categoria.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/categoria.js"></script>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -29,20 +31,38 @@
     </div>
   </header> 
 
-  <header>
+  <main>
     <div class="categoria">
+      {{@key}}
       <div class="text">
         <p class="cat_serif">
-          Feitos em Laboratório
+          {{this.categoria}}
         </p>
         <p class="cat_sans">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+          {{this.descricao}}
         </p>
       </div>
     </div>
+
+    <ul class="proj-container1">
+      {{#each projetos}}
+      <div class="proj-item">
+        <img class="proj-item" src="assets/img/{{@key}}.jpg" alt="foto do projeto">
+        <div class="text">
+          <p class="proj-txt">
+            <a class="font_main" href="projeto.html?cat={{../ckey}}&proj={{@key}}">{{this.titulo}}</a>
+          </p>
+          <div class="font_sub">
+            <p class="proj-txt">
+              {{this.descricao}}
+            </p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </ul>
     
-    <div class="proj-container1">
+    <!-- <div class="proj-container1">
       <img class="proj-item" src="https://picsum.photos/200/250" alt="foto da categoria">
       <div class="proj-item">
         <div class="text">
@@ -59,10 +79,6 @@
           </div>
         </div>
       </div>
-
-      <div class="margem">
-       <!--  by Diogo Cintra 2A -->
-     </div>
      
      <img class="proj-item" src="https://picsum.photos/200/250" alt="foto da categoria">
      <div class="proj-item">
@@ -80,11 +96,7 @@
         </div>
       </div>
     </div>
-  </div>
-</header>
 
-<main>
-  <div class="proj-container2">
     <img class="proj-item" src="https://picsum.photos/200/250" alt="foto da categoria">
     <div class="proj-item">
       <div class="text">
@@ -101,10 +113,6 @@
         </div>
       </div>
     </div>
-
-    <div class="margem">
-     <!--  by Diogo Cintra 2A -->
-   </div>
    
    <img class="proj-item" src="https://picsum.photos/200/250" alt="foto da categoria">
    <div class="proj-item">
@@ -122,7 +130,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 </main>
 <footer class="footer-container">
   <div class="footer-inside-container">

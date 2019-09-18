@@ -10,22 +10,19 @@
 }
 
 .proj-container1{
-	display: flex;
-	margin: 0 auto;
-	margin-bottom: 1rem;
-	max-width: 90rem;
-}
-
-.proj-container2{
-	display: flex;
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-gap: 3%;
+	max-width: 64rem;
 	margin: 0 auto;
 	margin-bottom: 6.7rem;
-	max-width: 90rem;
 }
 
 .proj-item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 	background-color: #B0EAFF;
-	align-content: space-around;
 }
 
 .proj-txt{
